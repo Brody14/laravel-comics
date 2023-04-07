@@ -19,7 +19,7 @@ Route::get('/', function () {
         'comics' =>  [
              
             [
-                "title" => "Action Comics #1000: The Deluxe Edition",
+                "'title'" => "Action Comics #1000: The Deluxe Edition",
                 "description" => "The celebration of 1,000 issues of Action Comics continues with a new, Deluxe Edition of the amazing comic that won raves when it hit comics shops in April! This hardcover includes all the stories from that issue, plus the tale by writer Paul Levitz and artist Neal Adams that appeared in the Action Comics: 80 Years Of Superman hardcover, as well as all the variant covers, design sketches by Jim Lee for Superman’s new look, scripts for the stories, the original art from the lost story featuring art by Curt Swan and more! Plus: a complete reprint of the stories that started it all—the Superman stories Action Comics #1 and 2 from 1938!",
                 "thumb" => "https://www.brooklyncomicshop.com/BCS/wp-content/uploads/2019/02/Action-Comics-419-Brooklyn-Comic-Shop.jpg.jpeg",
                 "price" => "$19.99",
@@ -255,6 +255,55 @@ Route::get('/', function () {
                 'text'=> 'dc power visa',
             ],
         ],
+        'menuLinks'=> [
+            [
+                'title'=> 'dc comics',
+                'links'=> [
+                    'Characters',
+                    'Comics',
+                    'Movies',
+                    'TV',
+                    'Games',
+                    'Videos',
+                    'News']
+
+            ],
+            [
+                'title'=> 'dc',
+                'links'=> [
+                    'Terms Of Use',
+                    'Privacy policy (New)',
+                    'Ad Choices',
+                    'Advertising',
+                    'Jobs',
+                    'Subscriptions',
+                    'Talent Workshops',
+                    'Subscriptions',
+                    'CPSC Certificates',
+                    'Ratings',
+                    'Shop Help',
+                    'Contact Us',]
+
+            ],
+            [
+                'title'=> 'sites',
+                'links'=> [
+                    'DC',
+                    'MAD Magazine',
+                    'DC Kids',
+                    'DC Universe',
+                    'DC Power Visa ',]
+
+            ],
+            [
+                'title'=> 'shop',
+                'links'=> [
+                    'Shop DC',
+                    'Shop DC Collectibles',]
+
+            ],
+        ]
+    
     ];
           
     return view('welcome', $data);
