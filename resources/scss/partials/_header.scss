@@ -40,12 +40,19 @@
         right: 0;
     }
 
-    .drop-down {
-        color: $blue;
-        padding: 0 5px;
-    }
 }
 
+.nav {
+    position: relative;
+}
+
+.drop-down {
+    color: $blue;
+    padding: 0 5px;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+}
 
 .search-bar {
     border-bottom: 2px solid $blue;
@@ -55,5 +62,9 @@
         width: 120px;
         text-align: end;
         border: unset !important;
+
+        &::placeholder {
+            color: black;
+        }
     }
 }

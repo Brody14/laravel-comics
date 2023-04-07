@@ -7,18 +7,13 @@
        
         <nav class="header-nav ms-5">
             <ul class="nav">
-                <li class="nav__item">characters </li>
-                <li class="nav__item">comics </li>     
-                <li class="nav__item">movies </li>     
-                <li class="nav__item">tv </li>     
-                <li class="nav__item">games </li>     
-                <li class="nav__item">collectibles </li>     
-                <li class="nav__item">videos </li>     
-                <li class="nav__item">fans </li>     
-                <li class="nav__item">news </li>     
-                <li class="nav__item">shop 
-                    <i class="drop-down fa-solid fa-caret-down"></i>
-                </li>     
+                @foreach($navbarItems as $item)
+                <li class="nav__item">{{$item}} </li>
+                    @if($item === 'shop') 
+                        <i class="drop-down fa-solid fa-caret-down"></i>
+                    @endif
+                @endforeach    
+                     
             </ul>
         </nav>
 
