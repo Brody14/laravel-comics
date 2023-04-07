@@ -5,13 +5,87 @@
 
 
 $blue: #0c7cec;
+$main-bg: #1c1c1c;
 
 
 img {
     max-width: 100%;
 }
 
-.thumbs {
-    height: 200px;
-    width: 150px;
+.hero {
+    background-image: url('/jumbotron.jpg');
+    background-size: cover;
+    height: 300px;
 }
+
+.main-content {
+    padding: 20px 20px 10px;
+    background-color: $main-bg;
+    color: white;
+
+    .br-card {
+        margin-bottom: 20px;
+
+        .thumbs {
+            height: 200px;
+            width: 150px;
+            margin-bottom: 10px;
+        }
+    
+        .title {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+.btn {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-blue {
+    text-align: center;
+    background-color: $blue;
+    border: none;
+    width: 17%;
+}
+
+.btn-blue.badge {
+    font-size: 20px;
+    position: absolute;
+    top: -40px;
+}
+
+.sidebar{
+
+    background-color: $blue;
+    padding: 20px;
+    color: white;
+
+    &_card{
+        padding: 20px;
+        gap: 10px;
+
+        &_card-img img {
+            height: 40px;
+        }
+    }
+
+    &:last-child img {
+        width: 40px;
+    }
+    
+    &_card-body{
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+}
+
+    
+
+  
+
+
